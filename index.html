@@ -2,25 +2,53 @@
 <html>
 <head>
   <style>
-  #titlewrapper {width: 100%;
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    border-bottom: 3px solid gray}
-  .now {text-decoration: underline; color: blue;}
-  .main {text-align: center;}
-  .list {width: 25%;
-    margin: 0 auto;
-    text-align: center;
-    padding-left: 7.5%;
-    padding-right: 10%;
-    font-size: 120%;}
-  a {text-decoration: none;
-    color: black;}
+    #titlewrapper {
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: center;
+      border-bottom: 3px solid gray
+    }
+    #grid {
+      display: grid;
+      grid-template-rows: 60px 1fr;
+    }
+    #grid ol{
+      display: inline;
+      text-align: center;
+      border-left: solid gray;
+      border-right: solid gray;
+      padding-right: 40px;
+    }
+    #grid li{
+      display: inline-block;
+      width: 10% auto;
+      padding: 17px;
+      text-align: center;
+    }
+    .now {
+      text-decoration: underline; color: blue;
+    }
+    .main {
+      text-align: center;
+      margin: 1%;
+      ;}
+    .list {
+      width: 35%;
+      margin: 0 auto;
+      padding-left: 32.5%;
+      padding-right: 32.5%;
+      font-size: 120%;
+      border-bottom: solid gray;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
 
-  body
-  {background-image:url("snow.jpg");}
+    body
+    {background-image:url("snow.jpg");}
   </style>
 
 <title>제주은갈치의 코딩공부</title>
@@ -35,6 +63,7 @@
       </h1>
   </div>
 
+<div id="grid">
   <div class="list">
       <ol>
         <li><a href="1.html">제주은갈치의 코딩공부</a></li>
@@ -54,6 +83,7 @@
       <p><a href="https://namu.wiki/w/%EA%B0%88%EC%B9%98" target="ㅡ_blank" title="갈치" style="text-decoration: underline">출처 - 나무위키/갈치<a></p>
       <br>
   </div>
+</div>
 
 </body>
 <html>
